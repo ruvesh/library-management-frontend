@@ -6,19 +6,17 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
       </header>
+      <footer className="App-footer">
+        &copy; 2020 Library Manager, Developed by &nbsp;
+        <a className="App-link" 
+        href="https://v-ruvesh.in" 
+        target="_blank"
+        rel="noopener noreferrer">
+          Ruvesh
+        </a>
+      </footer>
     </div>
   );
 }
