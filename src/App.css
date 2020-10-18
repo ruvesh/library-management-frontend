@@ -89,3 +89,37 @@
 .nav-links a.active{
   color: #88c7be;
 }
+
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback{
+  position: absolute;
+  z-index: 5;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+.book-list{
+  position: relative;
+  border-radius: 10px;
+  margin: 2vh auto;
+  width: 50%;
+  height: 70vh;
+  background: #ebebeb;
+}
+
+.component-footer{
+  padding: 10px;
+  width: 100%;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+}

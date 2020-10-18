@@ -5,14 +5,15 @@ import brand_logo from './assets/icons/brand.ico';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faPowerOff, faSignInAlt } from '@fortawesome/free-solid-svg-icons';
+import { faPowerOff, faSignInAlt, faSearch } from '@fortawesome/free-solid-svg-icons';
 import Login from './components/Login';
 import auth from './service/auth/auth';
 import {Route, Switch, NavLink} from 'react-router-dom';
 import {ProtectedRoute} from './components/ProtectedRoute'
+import SearchBook from './components/SearchBook';
 
 
-library.add(fab, faPowerOff, faSignInAlt)
+library.add(fab, faPowerOff, faSignInAlt, faSearch)
 
 
 function App() {
@@ -47,7 +48,7 @@ function App() {
         loggedIn={loggedIn}
         setLoginState={setLoginState}/> 
         )} />
-        <ProtectedRoute path="/search-book" component={()=>(<h1>Search For Books</h1>)} />
+        <ProtectedRoute path="/search-book" component={SearchBook} />
         <ProtectedRoute path="/search-author" component={()=>(<h1>Search For Authors</h1>)} />
         <ProtectedRoute path="/search-author" component={()=>(<h1>Search For Authors</h1>)} />
         <ProtectedRoute path="*" component={()=>(<h1>404 Not Found!</h1>)} />

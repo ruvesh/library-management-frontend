@@ -39,6 +39,7 @@ function Login({loggedIn, setLoginState}) {
             <div >
                 <h1>My Account</h1>
                 <FontAwesomeIcon icon="sign-in-alt" />
+                { !loggedIn ? <h3>Login</h3> : ""}
             </div>
 		</div>
 		<div className={"page" + hiddenClass}>
